@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formulario</title>
+    <link rel="shortcut icon" href="logo multisccrap.jpg">
+    <link rel="stylesheet" href=".css/formulario.css">
+</head>
+<body>
+    
+    <header class="header-nav">
+        <a class="header-logo" href="">
+            <img src="logo multisccrap.jpg" alt="20px" height="20px">
+            <span class="site-name">Multiscrap</span>
+            <span class="site-desc">Facturación/ Gestion de información / Ventas</span>
+        </a>
+            <nav>
+                <ul>
+                    <li><a href="file:///C:/Users/ESTUDIANTE/Desktop/Multiscrap/index.html">Inicio</a></li>
+                    <li><a href="file:///C:/Users/ESTUDIANTE/Desktop/Multiscrap/quienes%20somos.html">¿Quienes Somos?</a></li>
+                    <li><a href="file:///C:/Users/ESTUDIANTE/Desktop/Multiscrap/inicio%20de%20sesion.html">Iniciar sesion</a></li>
+                    <li><a href="file:///C:/Users/ESTUDIANTE/Desktop/Multiscrap/inicio%20de%20sesion.html">Gerente</a></li>
+                </ul>
+            </nav>
+</header>
+
+<main>
+    <section class="form-login">
+        <h5>Formulario</h5>
+        <input class="controls" type="text" name="Nombre" value="" placeholder="Nombre">
+        <input class="controls" type="text" name="Numero de identificacion" value="" placeholder="Numero de identificación">
+        <input class="controls" type="text" name="Correo electronico" value="" placeholder="Correo electronico">
+        <input class="controls" type="text" name="numero telefonico" value="" placeholder="Numero telefonico">
+
+        <div class="input-contenedor">
+            <button onclick="toggleVisibility()">Empleado</button>
+            <button onclick="toggleVisibility2()">Gerente</button>
+        </div>
+
+        <div id="nuevocampo" style="display: none;">
+            <input  class="controls" type="password" name="Codigo de acceso" value="" placeholder="Codigo de acceso">
+            <button>finalizar</button>
+        </div>
+
+        <div id="Contraseña-gerente" style="display: none;">
+            <input  class="controls" type="text" name="Contraseña" value="" placeholder="Contraseña"> 
+            <input  class="controls" type="password" name="Confirmar contraseña" value="" placeholder="Confirmar contraseña">
+            <button>finalizar</button>
+        </div>
+
+        <script>
+            function toggleVisibility() {
+                var div = document.getElementById("nuevocampo");
+                if (div.style.display ==="none") {
+                    div.style.display = "block"; 
+                } else {
+                    div.style.display = "none";
+                }
+            }
+        </script>
+
+                <script>
+                    function toggleVisibility2() {
+                        var div = document.getElementById("Contraseña-gerente");
+                        if (div.style.display ==="none") {
+                            div.style.display = "block"; 
+                        } else {
+                            div.style.display = "none";
+                        }
+                    }
+                </script>
+        <div class="password">
+            <p><a href="">Restablecer codigo</a></p>
+        </div>
+    </section>
+</main>
+
+
+<footer>
+    <section><span>®Multiscrap 2025</span></section>
+    <hr>
+    <section class="more-info">
+        <div>
+            <a href="">Contacto</a>
+            <a href="">Ayuda</a>
+            <a href=""></a>
+        </div>
+        <div>
+            <a href="">tv 74 a n43-60 sur</a>
+            <a href="">Condiciones de servicio</a>
+        </div>
+    </section>
+</footer>
+</body>
+</html>
